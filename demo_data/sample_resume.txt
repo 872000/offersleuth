@@ -1,0 +1,7 @@
+Built REST APIs with Java and Spring Boot serving 10k+ daily requests for a warehouse management system.
+Developed React dashboard components with TypeScript, improving internal reporting speed by 30%.
+Wrote unit tests with JUnit achieving 85% code coverage across core services.
+Designed PostgreSQL schemas and optimized slow queries, cutting report generation time in half.
+Containerized services with Docker and deployed to AWS using CI/CD pipelines on GitHub Actions.
+Collaborated in Agile sprints with code reviews, pair programming, and daily standups.
+Built Python scripts to automate data imports, saving the ops team 5 hours per week.

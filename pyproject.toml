@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "offersleuth"
+version = "0.1.0"
+description = "Job-description analyzer: red flags, salary sanity-checks and tailored resume bullets."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Parth (872000)" }]
+requires-python = ">=3.10"
+keywords = ["jobs", "career", "nlp", "cli"]
+
+[project.scripts]
+offersleuth = "offersleuth.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
