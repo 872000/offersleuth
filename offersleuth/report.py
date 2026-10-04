@@ -57,6 +57,7 @@ def analyze(
 
 
 def _grade(score: int) -> str:
+    """Map a 0-100 posting score to a letter grade (A/F scale)."""
     if score >= 90:
         return "A"
     if score >= 75:
@@ -69,6 +70,11 @@ def _grade(score: int) -> str:
 
 
 def _summarize(title, score, grade, flags, salary: SalaryCheck, gaps) -> str:
+    """Build the one-paragraph plain-English verdict for the report.
+
+    Combines the letter grade, red-flag severity counts, salary disclosure,
+    and resume keyword gaps into a triage summary for a posting.
+    """
     critical = sum(1 for f in flags if f.severity == "critical")
     high = sum(1 for f in flags if f.severity == "high")
     missing = [g.skill for g in gaps if not g.covered] if gaps else []
